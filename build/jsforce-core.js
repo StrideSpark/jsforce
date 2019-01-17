@@ -2103,7 +2103,7 @@ Connection.prototype.loginBySoap = function(username, password, callback) {
 };
 
 /**
- * Logout the current session 
+ * Logout the current session
  *
  * @param {Boolean} [revoke] - Revokes API Access if set to true
  * @param {Callback.<undefined>} [callback] - Callback function
@@ -4305,7 +4305,7 @@ var DEFAULT_BULK_THRESHOLD = 200;
  * @param {String} [type] - SObject type. Required for SOQL based query object.
  * @param {Object} [options] - Mass delete operation options
  * @param {Boolean} [options.allowBulk] - Allow switching to Bulk API when the num of queried records reached to certain threshold. Default is true.
- * @param {Number} [options.bulkThreshold] - Threshold num to switch to use Bulk API instead of usual `SObject#delete()` call. Default value is 200 after API ver 42.0, and 0.5 * `maxRequest` before API ver 42.0.
+ * @param {Number} [options.bulkThreshold] - Threshold num to switch to use Bulk API instead of usual `SObject#delete()` call. Default value is 200 after API ver 42.0, and 0.5 * `maxRequest` before API ver q.
  * @param {Callback.<Array.<RecordResult>>} [callback] - Callback function
  * @returns {Promise.<Array.<RecordResult>>}
  */
@@ -4614,7 +4614,7 @@ QuickAction.prototype.defaultValues = function(contextId, callback) {
 
 /**
  * Execute the action for given context Id and record information
- * 
+ *
  * @param {String} contextId - Context record ID of the action
  * @param {Record} record - Input record information for the action
  * @param {Callback.<QuickAction~QuickActionResult>} [callback] - Callback function
